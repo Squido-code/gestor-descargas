@@ -7,13 +7,18 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <content>
       <VBox fx:id="vbLayout" prefHeight="398.0" prefWidth="597.0" spacing="10.0">
          <children>
             <Label text="URL" underline="true" />
             <TextField fx:id="tfUrl" />
-            <Button fx:id="lbDirectorio" mnemonicParsing="false" onAction="#seleccionDirectorio" text="Directorio" />
+            <Button fx:id="btDirectorio" mnemonicParsing="false" onAction="#seleccionDirectorio" text="Directorio" />
+            <Label fx:id="lbDirectorio">
+               <VBox.margin>
+                  <Insets left="3.0" />
+               </VBox.margin>
+            </Label>
             <Button fx:id="btDescargar" disable="true" mnemonicParsing="false" onAction="#lanzarDescarga" text="Descargar" />
          </children>
          <padding>
