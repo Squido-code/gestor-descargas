@@ -13,13 +13,14 @@
          <children>
             <Label text="URL" underline="true" />
             <TextField fx:id="tfUrl" />
-            <Button fx:id="btDirectorio" mnemonicParsing="false" onAction="#seleccionDirectorio" text="Directorio" />
+            <Button fx:id="btDirectorio" mnemonicParsing="false" onAction="#seleccionDirectorio" text="Elegir directorio y descargar" />
             <Label fx:id="lbDirectorio">
                <VBox.margin>
                   <Insets left="3.0" />
                </VBox.margin>
             </Label>
-            <Button fx:id="btDescargar" mnemonicParsing="false" onAction="#lanzarDescarga" text="Crear descarga" />
+            <Button fx:id="btDescargar" mnemonicParsing="false" onAction="#lanzarDescarga" text="Descarga predeterminada" />
+            <Button fx:id="btElegirLista" mnemonicParsing="false" onAction="#elegirLista" text="elegir lista de descargas" />
          </children>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
